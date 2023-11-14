@@ -7,7 +7,7 @@ class DisjointSetUnion:
     """Disjoint Set Union."""
     def __init__(self, node_number: int):
         self.element_parent = {}
-        for a in range(node_number):
+        for a in range(1, node_number + 1):
             self.element_parent[a] = a
 
     def is_same_set(self, node_a: int, node_b: int) -> bool:
